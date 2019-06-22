@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Merriweather';
+    src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v20/u-440qyriQwlOrhSvowK_l5-fCZM.woff2) format('woff2');
+  }
+  
+
+body{
+    background: url('../images/760050-security-wallpapers-1920x1080-windows.jpg') no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.login{
+    height: 100vh;
+    width: 40vw;
+    background-color: rgba(245, 245, 245, 0.8);
+    box-sizing: border-box;
+    padding-top: 30vh;
+}
+
+.title{
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+    font-family: 'Merriweather';
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+.input{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 5vh;
+    height: 5vh;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom: solid 1.25px black;
+    color: black;
+    font-family: sans-serif;
+}
+
+.input::placeholder{
+    color: #3b719f;
+}
+
+.button{
+    width: 25%;
+    height: 6vh;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5vh;
+    border: none;
+    background-color: #3b719f;
+    font-family: 'Merriweather';
+    font-weight: bold;
+    color: black;
+}
