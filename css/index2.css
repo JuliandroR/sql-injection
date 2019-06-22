@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Viga';
+    src: local('Viga-Regular'), url(https://fonts.gstatic.com/s/viga/v7/xMQbuFFdSaiXzQUpDg.woff2) format('woff2');
+  }
+
+body{
+    background: url('../images/759834-security-wallpapers-2880x1800-mac.jpg') no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.login{
+    width: 40vw;
+    height: 50vh;
+    background-color: #363636e7;
+    margin-top: 25vh;
+    padding-top: 5vh;
+    margin-left: 30vw;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #fafafa;
+    font-family: 'Viga';
+}
+
+.title{
+    display: block;
+    margin: 0;
+    text-align: center;
+    font-size: 2.5vw;
+    margin-bottom: 2.5vh;
+}
+
+.input{
+    display: block;
+    width: 20vw;
+    height: 5vh;
+    margin: 3vh auto 0 auto;
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: solid 1.5px #fafafa;
+    color: #fafafa;
+    font-size: 1vw;
+}
+
+.input::placeholder{
+    color: #f4f4f4;
+    font-size: 1.15vw;
+}
+
+.button{
+    display: block;
+    margin: 5vh auto 0 auto;
+    width: 25%;
+    height: 6vh;
+    border: none;
+    background-color: #626262;
+    color: #fafafa;
+    font-weight: bold;
+    font-family: 'Viga';
+}
