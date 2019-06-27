@@ -13,7 +13,8 @@ services:
     ports:
       - "9906:3306"
   web:
-    image: php:7.2.2-apache
+    build:
+      context: ./
     container_name: php_web
     depends_on:
       - db
@@ -21,6 +22,6 @@ services:
       - ./web/:/var/www/html/
     ports:
       - "8080:80"
-    command: docker-php-ext-install mysqli
+
     stdin_open: true
     tty: true
