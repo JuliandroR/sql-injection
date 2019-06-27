@@ -1,0 +1,26 @@
+# ./docker-compose.yml
+
+version: '3'
+
+services:
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: test_db
+      MYSQL_USER: bruno
+      MYSQL_PASSWORD: senha123
+    ports:
+      - "9906:3306"
+  web:
+    image: php:7.2.2-apache
+    container_name: php_web
+    depends_on:
+      - db
+    volumes:
+      - ./web/:/var/www/html/
+    ports:
+      - "8080:80"
+    command: docker-php-ext-install mysqli
+    stdin_open: true
+    tty: true

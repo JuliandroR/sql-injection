@@ -9,9 +9,12 @@
     <title>Example SQL Injection</title>
 </head>
 <body>
+<form action="login.php">
+<button type="submit">Enviar</button>
+</form>
     <div class="login">
         <h2 class="title">LOGIN</h2>
-        <input placeholder="E-mail" type="text" class="input">
+        <input placeholder="user" type="text" class="input">
         <input placeholder="Password" type="password" class="input">
         <button class="button">Login</button>
     </div>
